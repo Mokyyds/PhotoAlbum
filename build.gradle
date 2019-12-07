@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://health.ia.ac.cn:6005/repository/CommLib/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext {
+
+    versionCode = 1017
+    versionName = '1.0.17'
+
+    androidCompileSdkVersion = 26
+    androidBuildToolsVersion = '26.0.2'
+    androidSupportSdkVersion = '27.1.1'
+    minSdkVersion = 16
+    targetSdkVersion = 27
+
+    junitVersion = '4.12'
+
+    rxjava2Version = '2.0.2'
+    retrofit2Version = '2.1.0'
+    gsonVersion = '2.6.2'
+
+    butterknifeVersion = '8.4.0'
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="item.placeholder" format="reference|color" />
+    <attr name="page.bg" format="reference|color" />
+    <attr name="preview.bottomToolbar.back.textColor" format="reference|color" />
+</resources>
